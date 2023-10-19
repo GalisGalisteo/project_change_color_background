@@ -9,6 +9,7 @@ const colors = ['red', 'green', 'blue', 'yellow', 'pink', 'purple']
 
 // RANDOM
 const changeBgColor = () => {
-    const index = Math.floor(Math.random() * 6);
-    document.querySelector('body').style.background = colors[index];
+    const index = Math.floor(Math.random() * colors.length);
+    console.log("🚀 ~ file: script.js:13 ~ changeBgColor ~ index:", index)
+    document.body.style.background = colors[index];
 }
